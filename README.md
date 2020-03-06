@@ -10,7 +10,9 @@ Steps:
 This binary will read from the following files:
 
 ~/Library/Application Support/Slack/storage/slack-teams
+
 ~/Library/Application Support/Slack/storage/slack-downloads
+
 ~/Library/Application Support/Slack/Cookies
 
 As noted in Cody Thomas' post, you can copy the three files above and put them on a new host with a newly installed (and never logged into) Slack instance and start Slack there and you will be logged in.

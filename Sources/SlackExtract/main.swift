@@ -34,11 +34,11 @@ if fileMan.fileExists(atPath: "/Users/\(uName)/Library/Application Support/Slack
         
     }
     
-    if fileMan.fileExists(atPath: "/Users/\(uName)/Library/Application Support/Slack/storage/slack-teams"){
+    if fileMan.fileExists(atPath: "/Users/\(uName)/Library/Application Support/Slack/storage/slack-workspaces"){
            print("")
            print("\u{001B}[0;33m-->Found slack-workspaces file\u{001B}[0;0m")
            print("\u{001B}[0;33m---->Workspaces info of interest:\u{001B}[0;0m")
-           let wkspURL = URL(fileURLWithPath: "/Users/\(uName)/Library/Application Support/Slack/storage/slack-teams")
+           let wkspURL = URL(fileURLWithPath: "/Users/\(uName)/Library/Application Support/Slack/storage/slack-workspaces")
            let wkspData = try String(contentsOf: wkspURL)
            
            let wkspJoined = wkspData.components(separatedBy: ",")
